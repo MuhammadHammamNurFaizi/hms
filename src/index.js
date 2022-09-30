@@ -10,7 +10,7 @@ import Kategori from './component/Kategori.js';
 import Produk from './component/Produk.js';
 import Footer from './component/Footer.js';
 import './component/Homepage.css'
-import Login from './component/Login';
+import Login from './component/Login.js';
 
 
 
@@ -22,7 +22,7 @@ root.render(
     <Kategori />
     <Produk />
     <Footer />
-
+    <Login />
   </div>
 );
 

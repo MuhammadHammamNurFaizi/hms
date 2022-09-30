@@ -5,6 +5,7 @@ import bell16 from '../assets/bell16.ico'
 import house16 from '../assets/house16.ico'
 import search16 from '../assets/search16.ico'
 import './Homepage.css'
+import { NavLink } from "react-router-dom"
 
 const Header = () => {
   return (
@@ -28,17 +29,17 @@ const Header = () => {
             </form>
             <ul className="navbar-nav ms-auto">
                 <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href=""><img src={house16} alt="bell"/></a>
+                    <NavLink className="nav-link active" aria-current="page" to=""><img src={house16} alt="bell"/></NavLink>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="./Keranjang.js"><img src={shop16} alt="keranjang"/></a>
+                    <NavLink className="nav-link" to="./Keranjang.js"><img src={shop16} alt="keranjang"/></NavLink>
                 </li> 
                 <li className="nav-item">
-                    <a className="nav-link" href="notifikasi.html"><img src={bell16} alt="bell"/></a>
+                    <NavLink className="nav-link" to="notifikasi.html"><img src={bell16} alt="bell"/></NavLink>
                 </li>
                 <li className="nav-item dropdown">
-                    <a className="nav-link dropdown-toggle" href="#Kategori" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">Kategori</a>
+                    <NavLink className="nav-link dropdown-toggle" to="#Kategori" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Kategori</NavLink>
                     <ul className="dropdown-menu">
                         <li><a className="dropdown-item" href="#Fashion Pria">Fashion Pria</a></li>
                         <li><a className="dropdown-item" href="#Fashion Wanita">Fashion Wanita</a></li>
@@ -48,11 +49,11 @@ const Header = () => {
                     </ul>
                 </li>
                 <li className="nav-item me-2">
-                    <a className="nav-link" href="Login.js">Daftar</a>
+                    <NavLink className="nav-link" to="Login.js">Daftar</NavLink>
 
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="Login.js">Masuk</a>
+                    <NavLink className="nav-link" to="Login.js">Masuk</NavLink>
                 </li>
             </ul>
         </div>
